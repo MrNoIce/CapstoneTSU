@@ -6,17 +6,17 @@ import numpy as np
 ##############################################################################
 # 1. CONFIGURATION
 ##############################################################################
-CSV_FILE       = "angularVelocity_data.csv"   # Path to your CSV
+CSV_FILE       = "angularVelocity_data_3.csv"   # Path to your CSV
 TIME_COL       = "Timestamp"                  # Column name for timestamps
 Y_COL          = "Y"                          # Column name for your measured value
-OUTPUT_VIDEO   = "single_axis_animation.mp4"
+OUTPUT_VIDEO   = "single_axis_animation_2.mp4"
 FPS            = 30                           # Frames per second for output video
 
 # Date/time cutoff to start from (only keep data at or after this time):
-START_TIME_STR = "2025-02-17 15:07:40"        # Adjust if needed
+START_TIME_STR = "12-Mar-2025 11:58:20.368"        # Adjust if needed
 
 # Optionally limit how many seconds of data to animate (None = all):
-DURATION_LIMIT = None  
+DURATION_LIMIT = 69  
 
 # Timestamp format if your file has entries like "17-Feb-2025 15:04:17.070"
 TIMESTAMP_FORMAT = "%d-%b-%Y %H:%M:%S.%f"
@@ -96,7 +96,7 @@ fig.set_size_inches(8, 4.5)
 
 ax.set_title("Single-Axis Data Over Time")
 ax.set_xlabel("Time (seconds)")
-ax.set_ylabel(Y_COL)
+ax.set_ylabel("Acceleration (m/s^2)")
 ax.legend()
 
 # Define the axis limits

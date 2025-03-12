@@ -108,7 +108,7 @@ if __name__ == "__main__":
     # and start 'single_axis_animation.mp4' at t=0
     create_side_by_side_video(
         "IMG_1227.mp4",
-        "single_axis_animation.mp4",
+        "single_axis_animation_2.mp4",
         "comparison_side_by_side.mp4",
         start_offset_video1=14.9,   # skip 15s on the first video
         start_offset_video2=0.0     # skip 0s on the second
